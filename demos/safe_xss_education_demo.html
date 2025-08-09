@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- 
+🏫 安全なXSS教育デモ - 無害なサンプル
+このコードはPortSwigger Academyなどの正規教育機関で学ぶ内容に基づいています
+-->
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <title>安全なXSSデモ | 教育用</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .warning { background-color: #fff3cd; padding: 15px; border-left: 5px solid #ffc107; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div class="warning">
+        <strong>⚠️ 注意:</strong> これは教育用デモです。実際のシステムでテストしないでください
+    </div>
+
+    <h1>XSS基本原理デモ</h1>
+    <p>以下のボタンは脆弱性の「原理説明」のみを目的としています</p>
+    
+    <!-- 安全なデモンストレーション -->
+    <button onclick="demoAlert()">クリックでデモ実行</button>
+    
+    <script>
+        // 無害なデモ関数
+        function demoAlert() {
+            const safePayload = "alert('教育用デモ (実際の攻撃ではcookie等が使われます')";
+            console.log("[教育用ログ] 実行ペイロード:", safePayload);
+            
+            // 意図的に脆弱な処理を再現（教育目的）
+            const demoElement = document.createElement('div');
+            demoElement.innerHTML = `<b>模擬XSS:</b> ${safePayload.replace(/</g, "&lt;")}`;
+            
+            document.body.appendChild(demoElement);
+            alert("このalertは教育用に意図的に許可されています");
+        }
+    </script>
+</body>
+</html>
