@@ -69,7 +69,6 @@ document.getElementById("output").textContent = userInput; // 安全な処理に
 
 
 ##  コミュニティや役に立つようなポスト検索方法など
-- [日本バグバウンティ協会](https://bugbounty.jp/)
 - [Bounty Hunters Discordサーバー(英語圏)](https://discord.com/invite/bugbounty)
 - [X（旧Twitter） #BugBountyTips](https://x.com/hashtag/BugBountyTips)
 
