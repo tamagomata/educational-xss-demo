@@ -75,3 +75,6 @@ document.getElementById("output").textContent = userInput; // 安全な処理に
 
 ##  ライセンス
 このプロジェクトは [MIT License](LICENSE) で公開されています。教育目的での自由な利用・改変を許可します。
+
+## 法的事項
+利用に関する法的注意点は [LEGAL](LEGAL/LEGAL.md) 日本語版は[LEGAL_JP](LEGAL/LEGAL_JP.md) を参照してください。
