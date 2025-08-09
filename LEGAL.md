@@ -26,8 +26,3 @@ When conducting security research:
 - Always follow [ISO 29147](https://www.iso.org/standard/45170.html) disclosure guidelines
 - Respect [HackerOne's Disclosure Guidelines](https://www.hackerone.com/disclosure-guidelines)
 - Obtain written permission before testing any system
-
-## 5. Contact
-For legal inquiries:  
-[Your Email]  
-[Your Affiliation (if applicable)]
