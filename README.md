@@ -31,19 +31,20 @@ docker run --rm -p 3000:3000 bkimminich/juice-shop
 | [XSS Game](https://xss-game.appspot.com) | 初級 | Google製の学習ゲーム |
 | [PentesterLab XSS](https://pentesterlab.com/exercises/xss/) | 上級 | 証明書発行可能 |
 
-##  学習ステップ
-### 1. 基礎理解（1-2週間）
+#  学習ステップ（よかったらご参考に？）
+
+### 1. 基礎理解
 - `safe_xss_education_demo.html` で動作確認
 - Chrome DevToolsのConsoleタブでログを観察
 
-### 2. 脆弱性再現（3-4週間）
+### 2. 脆弱性再現
 ```javascript
 // harmless_dom_xss_example.js を改造
 const userInput = decodeURIComponent(location.hash.slice(1));
 document.getElementById("output").textContent = userInput; // 安全な処理に変更
 ```
 
-### 3. 防御実装（5-6週間）
+### 3. 防御実装
 - CSPヘッダーの設定練習
 - サニタイズ関数の自作
 
@@ -54,7 +55,7 @@ document.getElementById("output").textContent = userInput; // 安全な処理に
 | OWASP ZAP | 自動スキャン | `brew install --cask owasp-zap` |
 | Wappalyzer | 技術スタック分析 | [Chrome拡張](https://www.wappalyzer.com/) |
 
-## 📈 スキルチェックリスト
+##  スキルチェックリスト
 - [ ] `alert(document.domain)` を実行できる
 - [ ] DOM XSSと反射型XSSの違いを説明できる
 - [ ] 簡単なCSPポリシーを書ける
@@ -69,8 +70,8 @@ document.getElementById("output").textContent = userInput; // 安全な処理に
 
 ##  コミュニティ
 - [日本バグバウンティ協会](https://bugbounty.jp/)
-- [HackerOne Discord](https://discord.gg/hackerone)
-- [Twitter #BugBountyTips](https://twitter.com/hashtag/BugBountyTips)
+- [Bounty Hunters Discordサーバー(英語圏)](https://discord.com/invite/bugbounty)
+- [X（旧Twitter） #BugBountyTips](https://x.com/hashtag/BugBountyTips)
 
 ##  ライセンス
 このプロジェクトは [MIT License](LICENSE) で公開されています。教育目的での自由な利用・改変を許可します。
