@@ -62,11 +62,11 @@ document.getElementById("output").textContent = userInput; // 安全な処理に
 - [ ] OWASP Juice ShopでXSS問題を1つ解いた
 
 ##  バグバウンティ準備
-```markdown
+
 1. [HackerOne](https://www.hackerone.com/)に登録
 2. VDP（Vulnerability Disclosure Program）から開始
 3. 公開レポートを分析
-```
+
 
 ##  コミュニティや役に立つようなポスト検索方法など
 - [日本バグバウンティ協会](https://bugbounty.jp/)
