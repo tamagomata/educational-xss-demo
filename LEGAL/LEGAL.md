@@ -1,28 +1,54 @@
-# Legal Disclaimer
+# Terms of Use and Legal Disclaimer
 
 ## 1. Purpose
-This repository (`educational-xss-demo`) is intended **exclusively** for:
+This repository is intended **exclusively** for:
+
+
 - Legal cybersecurity education
 - Ethical hacking training
-- Secure coding practices research
+- Personal research (CTF/Bug Bounty preparation)
 
-## 2. Restrictions
-You MAY NOT use this material to:
-- Test systems without explicit owner permission
-- Develop actual exploits/malware
-- Violate laws including but not limited to:
-  - Computer Fraud and Abuse Act (CFAA)
-  - EU General Data Protection Regulation (GDPR)
-  - Japan's Unauthorized Computer Access Law (Article 234-2)
 
-## 3. Liability
-THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY. The author disclaims all liability for:
-- Any illegal activities conducted using this material
-- Damages caused by misuse of the provided code
-- Legal consequences of unauthorized security testing
+## 2. Prohibited Activities
+### Strictly Forbidden:
 
-## 4. Compliance
-When conducting security research:
-- Always follow [ISO 29147](https://www.iso.org/standard/45170.html) disclosure guidelines
-- Respect [HackerOne's Disclosure Guidelines](https://www.hackerone.com/disclosure-guidelines)
-- Obtain written permission before testing any system
+- Unauthorized system testing
+- Malware/exploit development
+- Violations of:
+   ! Computer Fraud and Abuse Act (CFAA)
+   ! GDPR (for EU users)
+   ! Japan's Unauthorized Computer Access Law
+
+
+## 3. Legal Compliance
+| Law | Relevant Section | Link |
+|-----|------------------|------|
+| CFAA | Section 1030 | [DOJ](https://www.justice.gov/criminal-ccips/computer-fraud-and-abuse-act) |
+| GDPR | Article 5 | [EUR-Lex](https://eur-lex.europa.eu/eli/reg/2016/679) |
+| UK Computer Misuse Act | Section 1 | [Legislation.gov.uk](https://www.legislation.gov.uk/ukpga/1990/18/section/1) |
+
+## 4. Liability Disclaimer
+
+- NO WARRANTY: Provided "AS IS"
+- NO LIABILITY for damages
+- Use at YOUR OWN RISK
+
+
+## 5. Legal Use Flowchart
+```mermaid
+graph TD
+    A[Start] --> B{Educational Use?}
+    B -->|Yes| C{Explicit Permission?}
+    B -->|No| D[STOP]
+    C -->|Yes| E[Proceed]
+    C -->|No| D
+```
+
+
+
+## 6. Version History
+| Version | Date       | Changes            |
+|---------|------------|--------------------|
+| 1.0.0   | 2025-08-25 | Initial Release    |
+
+[![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)  
